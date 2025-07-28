@@ -2,7 +2,7 @@
   "name": "keymatch",
   "type": "module",
   "version": "1.0.0",
-  "description": "Utility for matching keyboard events against Electron accelerator strings",
+  "description": "Utility for matching browser keyboard events across platforms",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
