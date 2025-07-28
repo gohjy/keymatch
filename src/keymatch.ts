@@ -1,3 +1,5 @@
+import { isMac } from './isMac.js';
+
 /**
  * Parses an Electron-style match string into its components
  */
@@ -90,11 +92,4 @@ export function keymatch(event: KeyboardEvent, matchString: string): boolean {
     event.altKey === alt &&
     event.shiftKey === shift &&
     event.metaKey === meta;
-}
-
-/**
- * Checks if the current platform is macOS using `navigator.platform`.
- */
-export function isMac() {
-  return navigator.platform.toLowerCase().includes('mac');
 }
