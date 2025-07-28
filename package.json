@@ -26,11 +26,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hubblenote/keymatch.git"
+    "url": "https://github.com/bholmesdev/keymatch.git"
   },
-  "homepage": "https://github.com/hubblenote/keymatch",
+  "homepage": "https://github.com/bholmesdev/keymatch",
   "bugs": {
-    "url": "https://github.com/hubblenote/keymatch/issues"
+    "url": "https://github.com/bholmesdev/keymatch/issues"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
