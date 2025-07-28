@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+dist/
+.npm/
+.pnpm/
+.pnp.*
+
+# macOS
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Dependency directories
+jspm_packages/
+web_modules/
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+
+# VS Code
+.vscode/
+
+# Others
+.idea/
+*.swp
+

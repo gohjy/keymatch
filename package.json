@@ -1,0 +1,33 @@
+{
+  "name": "keymatch",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Utility for matching keyboard events against Electron accelerator strings",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "keyboard",
+    "shortcuts",
+    "accelerator",
+    "electron",
+    "keybinding"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "jsdom": "^26.1.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
