@@ -24,6 +24,14 @@
   ],
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hubblenote/keymatch.git"
+  },
+  "homepage": "https://github.com/hubblenote/keymatch",
+  "bugs": {
+    "url": "https://github.com/hubblenote/keymatch/issues"
+  },
   "devDependencies": {
     "@types/node": "^20.0.0",
     "jsdom": "^26.1.0",
