@@ -78,7 +78,7 @@ function normalizeKey(key: string): string {
  * 
  * @example
  * ```typescript
- * if (matchesShortcut(event, 'CmdOrCtrl+N')) {
+ * if (keymatch(event, 'CmdOrCtrl+N')) {
  *   event.preventDefault();
  *   createNewFile();
  * }
