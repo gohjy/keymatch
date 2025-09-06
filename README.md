@@ -1,15 +1,11 @@
 # keymatch
 
-A utility for matching keyboard events against Electron accelerator strings.
+A utility for matching keyboard event.
 
 ## Installation
 
-```bash
-npm install keymatch
-# or
-pnpm add keymatch
-# or
-yarn add keymatch
+```plain
+import { keymatch } from "https://cdn.jsdelivr.net/gh/gohjy/keymatch/keymatch.js";
 ```
 
 ## Usage

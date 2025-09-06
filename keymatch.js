@@ -3,7 +3,7 @@ import { isMac } from './isMac.js';
 /**
  * Parses an Electron-style match string into its components
  */
-function parseMatchString(matchString: string) {
+function parseMatchString(matchString) {
   if (!matchString?.trim()) {
     return { ctrl: false, alt: false, shift: false, meta: false, key: '' };
   }
@@ -59,8 +59,8 @@ function parseMatchString(matchString: string) {
 /**
  * Normalizes a key from a KeyboardEvent to match Electron's key naming
  */
-function normalizeKey(key: string): string {
-  const keyMap: Record<string, string> = {
+function normalizeKey(key) {
+  const keyMap = {
     ' ': 'space',
     'arrowup': 'up',
     'arrowdown': 'down',
@@ -84,7 +84,7 @@ function normalizeKey(key: string): string {
  * }
  * ```
  */
-export function keymatch(event: KeyboardEvent, matchString: string): boolean {
+export function keymatch(event, matchString) {
   const { ctrl, alt, shift, meta, key } = parseMatchString(matchString);
 
   return normalizeKey(event.key) === key &&
@@ -93,3 +93,6 @@ export function keymatch(event: KeyboardEvent, matchString: string): boolean {
     event.shiftKey === shift &&
     event.metaKey === meta;
 }
+
+// Re-export isMac in case users need it
+export { isMac };

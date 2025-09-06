@@ -2,20 +2,30 @@ import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { keymatch } from './keymatch';
 
 // Helper function to create a mock KeyboardEvent
-function createKeyboardEvent(options: {
-  key: string;
-  ctrlKey?: boolean;
-  metaKey?: boolean;
-  altKey?: boolean;
-  shiftKey?: boolean;
-}): KeyboardEvent {
-  return {
-    key: options.key,
-    ctrlKey: options.ctrlKey ?? false,
-    metaKey: options.metaKey ?? false,
-    altKey: options.altKey ?? false,
-    shiftKey: options.shiftKey ?? false,
-  } as KeyboardEvent;
+
+class MockKeyboardEvent extends KeyboardEvent {
+  constructor(options) {
+    super();
+    for (let [key, value] of Object.entries(options)) {
+      this[key] = value;
+    }
+  }
+}
+
+function createKeyboardEvent({
+  key,
+  ctrlKey,
+  metaKey,
+  altKey,
+  shiftKey,
+}) {
+  return new MockKeyboardEvent({
+    key: key,
+    ctrlKey: ctrlKey ?? false,
+    metaKey: metaKey ?? false,
+    altKey: altKey ?? false,
+    shiftKey: shiftKey ?? false,
+  });
 }
 
 describe('keyboard-shortcut', () => {
