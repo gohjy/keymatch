@@ -1,0 +1,23 @@
+{
+  "name": "keymatch",
+  "version": "1.0.0",
+  "description": "A utility for matching keyboard event.",
+  "main": "keymatch.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gohjy/keymatch.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gohjy/keymatch/issues"
+  },
+  "homepage": "https://github.com/gohjy/keymatch#readme",
+  "devDependencies": {
+    "jsdom": "^26.1.0",
+    "vitest": "^3.2.4"
+  }
+}
